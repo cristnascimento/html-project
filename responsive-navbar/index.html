@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Testing CSS3</title>
+</head>
+<body>
+    <div id="root">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </span>
+            <a href="#" class="logo">LOGO</a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="" class="nav-links">Projetos</a>
+                </li>
+                <li>
+                    <a href="" class="nav-links">Calendário</a>
+                </li>
+                <li>
+                    <a href="" class="nav-links">Documentação</a>
+                </li>
+                <li>
+                    <a href="" class="nav-links">Pesquisa</a>
+                </li>
+                <li>
+                    <a href="" class="nav-links">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+           mainNav.classList.toggle('active');
+        });
+    </script>
+
+    <script src="https://use.fontawesome.com/66286b76f2.js"></script>
+
+</body>
+
+</html>
